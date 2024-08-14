@@ -45,6 +45,7 @@ cd haber-kategorilendirme-projesi
 
 # Gerekli bağımlılıkları yükleyin
 pip install -r requirements.txt
+```
 
 ## Dosyalar
 
