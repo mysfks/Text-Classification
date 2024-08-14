@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 data = []
-workspace_path = 'C:/Users/myusu/OneDrive/Masaüstü/trt'
+workspace_path = 'trt'
 
 """
 saglik
