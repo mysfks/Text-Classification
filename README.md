@@ -36,11 +36,20 @@ To run this project locally, you need to have Python and PySpark installed. Foll
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/repo-name.git
+   ```
+2. Navigate to the project directory:
+   ```bash
    cd repo-name
+   ```
+3. Install the required Python packages:
+   ```bash
    pip install -r requirements.txt
+   ```
+3. Run the Jupyter Notebook:
+   ```bash
    jupyter notebook medium.ipynb
    ```
-
+   
 ## Usage
 To use this notebook:
 
