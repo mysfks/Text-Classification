@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ## Files
 **news_scraper.py:** Scrapes news articles from specified categories and generates separate CSV files for each category.
-**data_merger.py:** Merges the category-specific CSV files into a single dataset and performs PySpark and machine learning operations on the dataset.
+**csv_birlestirme.py:** Merges the category-specific CSV files into a single dataset and performs PySpark and machine learning operations on the dataset.
 
 ## Features
 **Automatic Categorization**: Automatically classifies news articles into specified categories.
