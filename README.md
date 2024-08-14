@@ -9,8 +9,7 @@ This project demonstrates how to use PySpark for text classification. It include
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## About the Project
 
