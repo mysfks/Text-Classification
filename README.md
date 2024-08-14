@@ -1,78 +1,56 @@
 # Text-Classification
-# Haber Kategorilendirme Projesi
 
-Bu proje, bir haber sitesinden verileri çekip, bu verileri kategori bazında sınıflandırmayı amaçlamaktadır. Proje kapsamında PySpark ve makine öğrenmesi teknolojileri kullanılmıştır.
+This project aims to scrape data from a news website and classify it into categories. The project utilizes PySpark and machine learning technologies.
 
-## İçindekiler
+## Table of Contents
 
-- [Proje Hakkında](#proje-hakkında)
-- [Gereksinimler](#gereksinimler)
-- [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
-- [Dosyalar](#dosyalar)
-- [Özellikler](#özellikler)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans](#lisans)
+- [About the Project](#about-the-project)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Files](#files)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Proje Hakkında
+## About the Project
 
-Bu projede iki temel dosya bulunmaktadır:
+This project consists of two main files:
 
-1. **Haber Toplayıcı Dosya:** Her bir kategoriden haberleri alıp bir CSV dosyasına dönüştürür.
-2. **Veri Birleştirici Dosya:** Elde edilen haber kategorilerini birleştirip tek bir veri seti haline getirir. Bu veri seti üzerinde PySpark ve makine öğrenmesi teknikleri kullanılarak sınıflandırma işlemleri gerçekleştirilir.
+1. **News Scraper File:** Collects news articles from various categories and converts them into a CSV file.
+2. **Data Merger File:** Merges the collected news categories into a single dataset. PySpark and machine learning techniques are then applied to classify the data.
 
-Projede, sınıflandırma işlemlerinin doğruluğunu ölçmek amacıyla bir başarı oranı hesaplanmaktadır.
+The project also includes a mechanism to calculate the accuracy of the classification process.
 
-## Gereksinimler
+## Requirements
 
-Bu projeyi çalıştırmak için aşağıdaki yazılım ve kütüphanelerin kurulmuş olması gerekmektedir:
+To run this project, you need to have the following software and libraries installed:
 
 - [Python 3.x](https://www.python.org/)
 - [PySpark](https://spark.apache.org/docs/latest/api/python/)
 - [Pandas](https://pandas.pydata.org/)
 - [Scikit-learn](https://scikit-learn.org/stable/)
 
-## Kurulum
+## Installation
 
-Projenin yerel ortamınıza kurulumu için aşağıdaki adımları takip edebilirsiniz:
+Follow these steps to set up the project in your local environment:
 
 ```bash
-# Projeyi klonlayın
-git clone https://github.com/kullanıcı-adı/haber-kategorilendirme-projesi.git
+# Clone the repository
+git clone https://github.com/username/text-classification-project.git
 
-# Proje dizinine gidin
-cd haber-kategorilendirme-projesi
+# Navigate to the project directory
+cd text-classification-project
 
-# Gerekli bağımlılıkları yükleyin
+# Install the required dependencies
 pip install -r requirements.txt
 ```
 
-## Dosyalar
+Files
+news_scraper.py: Scrapes news articles from specified categories and generates separate CSV files for each category.
+data_merger.py: Merges the category-specific CSV files into a single dataset and performs PySpark and machine learning operations on the dataset.
 
-- **`haber_toplayici.py`**: Belirlenen haber kategorilerini çekip, her bir kategori için ayrı CSV dosyaları oluşturan dosya.
-- **`veri_birlestirici.py`**: Kategori bazında oluşturulan CSV dosyalarını birleştirip tek bir veri seti oluşturan ve bu veri seti üzerinde PySpark ve makine öğrenmesi işlemleri yapan dosya.
-
-## Özellikler
-
-- **Otomatik Kategorilendirme**: Haber verilerini belirlenen kategorilere göre otomatik olarak sınıflandırır.
-- **PySpark ve Makine Öğrenmesi Entegrasyonu**: PySpark ve makine öğrenmesi tekniklerini kullanarak sınıflandırma işlemleri gerçekleştirir.
-- **Veri Birleştirme**: Farklı kategorilere ait haber verilerini tek bir veri setinde birleştirir ve bu veri seti üzerinde analizler yapar.
-
-## Katkıda Bulunma
-
-Projeye katkıda bulunmak isterseniz aşağıdaki adımları takip edebilirsiniz:
-
-1. Bu projeyi forklayın.
-2. Kendi dalınızda (branch) değişiklik yapın: `git checkout -b yeni-özellik`
-3. Değişikliklerinizi commitleyin: `git commit -m 'Yeni bir özellik eklendi'`
-4. Dalınıza push edin: `git push origin yeni-özellik`
-5. Bir Pull Request açın.
-
-Her türlü katkı değerlidir ve memnuniyetle karşılanır.
-
-## Lisans
-
-Bu proje [Lisans Adı](link) ile lisanslanmıştır.
-
-Projenin kullanımı, kopyalanması, değiştirilmesi ve dağıtılması bu lisans altında gerçekleştirilir.
-
+Features
+Automatic Categorization: Automatically classifies news articles into specified categories.
+PySpark and Machine Learning Integration: Utilizes PySpark and machine learning techniques for classification tasks.
+Data Merging: Combines news data from different categories into a single dataset for further analysis.
