@@ -46,11 +46,11 @@ cd text-classification-project
 pip install -r requirements.txt
 ```
 
-Files
+##Files
 news_scraper.py: Scrapes news articles from specified categories and generates separate CSV files for each category.
 data_merger.py: Merges the category-specific CSV files into a single dataset and performs PySpark and machine learning operations on the dataset.
 
-Features
+##Features
 Automatic Categorization: Automatically classifies news articles into specified categories.
 PySpark and Machine Learning Integration: Utilizes PySpark and machine learning techniques for classification tasks.
 Data Merging: Combines news data from different categories into a single dataset for further analysis.
