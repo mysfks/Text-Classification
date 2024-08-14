@@ -45,3 +45,33 @@ cd haber-kategorilendirme-projesi
 
 # Gerekli bağımlılıkları yükleyin
 pip install -r requirements.txt
+
+## Dosyalar
+
+- **`haber_toplayici.py`**: Belirlenen haber kategorilerini çekip, her bir kategori için ayrı CSV dosyaları oluşturan dosya.
+- **`veri_birlestirici.py`**: Kategori bazında oluşturulan CSV dosyalarını birleştirip tek bir veri seti oluşturan ve bu veri seti üzerinde PySpark ve makine öğrenmesi işlemleri yapan dosya.
+
+## Özellikler
+
+- **Otomatik Kategorilendirme**: Haber verilerini belirlenen kategorilere göre otomatik olarak sınıflandırır.
+- **PySpark ve Makine Öğrenmesi Entegrasyonu**: PySpark ve makine öğrenmesi tekniklerini kullanarak sınıflandırma işlemleri gerçekleştirir.
+- **Veri Birleştirme**: Farklı kategorilere ait haber verilerini tek bir veri setinde birleştirir ve bu veri seti üzerinde analizler yapar.
+
+## Katkıda Bulunma
+
+Projeye katkıda bulunmak isterseniz aşağıdaki adımları takip edebilirsiniz:
+
+1. Bu projeyi forklayın.
+2. Kendi dalınızda (branch) değişiklik yapın: `git checkout -b yeni-özellik`
+3. Değişikliklerinizi commitleyin: `git commit -m 'Yeni bir özellik eklendi'`
+4. Dalınıza push edin: `git push origin yeni-özellik`
+5. Bir Pull Request açın.
+
+Her türlü katkı değerlidir ve memnuniyetle karşılanır.
+
+## Lisans
+
+Bu proje [Lisans Adı](link) ile lisanslanmıştır.
+
+Projenin kullanımı, kopyalanması, değiştirilmesi ve dağıtılması bu lisans altında gerçekleştirilir.
+
