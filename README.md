@@ -1,56 +1,50 @@
-# Text-Classification
+# Text Classification with PySpark
 
-This project aims to scrape data from a news website and classify it into categories. The project utilizes PySpark and machine learning technologies.
+This project demonstrates how to use PySpark for text classification. It includes various steps such as data preprocessing, feature extraction, and model training using logistic regression.
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-- [Requirements](#requirements)
-- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Files](#files)
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## About the Project
 
-This project consists of two main files:
+This project aims to classify text data using PySpark. The notebook walks through the following steps:
 
-1. **News Scraper File:** Collects news articles from various categories and converts them into a CSV file.
-2. **Data Merger File:** Merges the collected news categories into a single dataset. PySpark and machine learning techniques are then applied to classify the data.
+1. **Initialization of SparkSession**: Setting up a SparkSession to utilize PySpark.
+2. **Data Loading**: Reading the dataset into a Spark DataFrame.
+3. **Data Preprocessing**: Tokenization, removal of stop words, and feature extraction using TF-IDF.
+4. **Model Training**: Training a Logistic Regression model to classify the text data.
+5. **Evaluation**: Evaluating the model's performance using accuracy metrics.
 
-The project also includes a mechanism to calculate the accuracy of the classification process.
+## Technologies Used
 
-## Requirements
+- **Python**
+- **PySpark**
+- **Seaborn**
+- **Matplotlib**
 
-To run this project, you need to have the following software and libraries installed:
+## Setup and Installation
 
-- [Python 3.x](https://www.python.org/)
-- [PySpark](https://spark.apache.org/docs/latest/api/python/)
-- [Pandas](https://pandas.pydata.org/)
-- [Scikit-learn](https://scikit-learn.org/stable/)
+To run this project locally, you need to have Python and PySpark installed. Follow these steps:
 
-## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   cd repo-name
+   pip install -r requirements.txt
+   jupyter notebook medium.ipynb
+   ```
 
-Follow these steps to set up the project in your local environment:
+## Usage
+To use this notebook:
 
-```bash
-# Clone the repository
-git clone https://github.com/username/text-classification-project.git
-
-# Navigate to the project directory
-cd text-classification-project
-
-# Install the required dependencies
-pip install -r requirements.txt
-```
-
-## Files
-**trt_haber.py:** Scrapes news articles from specified categories and generates separate CSV files for each category.
-**csv_birlestirme.py:** Merges the category-specific CSV files into a single dataset and performs PySpark and machine learning operations on the dataset.
-
-## Features
-1. **Automatic Categorization**: Automatically classifies news articles into specified categories.
-2. **PySpark and Machine Learning Integration:** Utilizes PySpark and machine learning techniques for classification tasks.
-3. **Data Merging:** Combines news data from different categories into a single dataset for further analysis.
+Ensure you have a suitable dataset for text classification.
+Modify the notebook to load your dataset.
+Run through the cells to perform text classification.
+Review the model's performance metrics at the end.
