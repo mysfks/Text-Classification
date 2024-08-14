@@ -57,3 +57,9 @@ Ensure you have a suitable dataset for text classification.
 Modify the notebook to load your dataset.
 Run through the cells to perform text classification.
 Review the model's performance metrics at the end.
+
+
+## Features
+Text Preprocessing: Includes tokenization, stop words removal, and TF-IDF vectorization.
+Classification: Logistic Regression model for text classification.
+Evaluation: Accuracy evaluation of the classification model.
