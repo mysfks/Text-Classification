@@ -16,7 +16,7 @@ This project demonstrates how to use PySpark for text classification. It include
 This project aims to classify text data using PySpark. The notebook walks through the following steps:
 
 1. **Initialization of SparkSession**: Setting up a SparkSession to utilize PySpark.
-2. **Data Loading**: Reading the dataset into a Spark DataFrame.
+2. **Data Loading**: Reading the dataset into a Spark DataFrame. 
 3. **Data Preprocessing**: Tokenization, removal of stop words, and feature extraction using TF-IDF.
 4. **Model Training**: Training a Logistic Regression model to classify the text data.
 5. **Evaluation**: Evaluating the model's performance using accuracy metrics.
